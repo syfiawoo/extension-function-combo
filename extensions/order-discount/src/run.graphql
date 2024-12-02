@@ -1,0 +1,8 @@
+query Input {
+  cart{
+    attribute(key: "totalPrice"){
+      key
+      value
+    }
+  }
+}

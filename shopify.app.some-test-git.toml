@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "d08f387bbbe26dbc1506042966979980"
+name = "Some test git"
+handle = "some-test-git"
+application_url = "https://fears-view-brakes-lesson.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "seth-10000plus-prod.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+[auth]
+redirect_urls = [
+  "https://fears-view-brakes-lesson.trycloudflare.com/auth/callback",
+  "https://fears-view-brakes-lesson.trycloudflare.com/auth/shopify/callback",
+  "https://fears-view-brakes-lesson.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-07"
+
+[pos]
+embedded = false
